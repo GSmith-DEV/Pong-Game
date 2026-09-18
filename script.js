@@ -143,8 +143,10 @@ setTimeout(function() {
         console.log(posX >= limite_direito,posX <= limite_esquerdo + speed,Math.abs(posY - posY_jogador2) <= bloco.clientHeight / 2 + barra_jogador2.clientHeight / 2)
         if (posX >= limite_direito && posX <= limite_direito + speed && Math.abs(posY - posY_jogador2) <= bloco.clientHeight / 2 + barra_jogador2.clientHeight / 2) {
             sentido_direito = false;
+            speed++;
         } else if (posX <= limite_esquerdo && posX >= limite_esquerdo - speed && Math.abs(posY - posY_jogador1) <= bloco.clientHeight / 2 + barra_jogador1.clientHeight / 2) {
             sentido_direito = true;
+            speed++;
         }
     
         bloco.style.transform = `translate(${posX}px,${posY}px)`
