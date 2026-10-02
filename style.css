@@ -34,11 +34,15 @@ body {
 
     height: 100px;
     width: 100px;
-    background-color: white;
     position: relative;
     border-radius: 10px;
 }
 #explosion {
+    display: none;
+    height: 300px;
+    width: 300px;
+}
+#foto {
     display: block;
     height: 100px;
     width: 100px;
