@@ -1,13 +1,14 @@
 // ----------ELEMENTOS-------------
-let bloco = document.querySelector("#bloco")
-let campo = document.querySelector("#campo")
+let bloco = document.querySelector("#bloco");
+let campo = document.querySelector("#campo");
 
-let barra_jogador1 = document.querySelector("#barra_jogador1")
-let barra_jogador2 = document.querySelector("#barra_jogador2")
+let barra_jogador1 = document.querySelector("#barra_jogador1");
+let barra_jogador2 = document.querySelector("#barra_jogador2");
 
-let tela = document.querySelector("body")
-let sound_explosion = document.querySelector("#sound_explosion")
-let animation_explosion = document.querySelector("#explosion")
+let tela = document.querySelector("body");
+let sound_explosion = document.querySelector("#sound_explosion");
+let animation_explosion = document.querySelector("#explosion");
+let foto = document.querySelector("#foto");
 // -------------------------------
 
 // -----------VARIAVEIS-----------
@@ -156,6 +157,7 @@ setTimeout(function() {
             speed = 0;
             first_time = false; 
             bloco.removeAttribute('id');   
+            foto.style.display = "none";
             animation_explosion.style.display = "block";
             sound_explosion.play();
         }
