@@ -39,9 +39,9 @@ body {
     border-radius: 10px;
 }
 #explosion {
-    display: none;
-    height: 300px;
-    width: 300px;
+    display: block;
+    height: 100px;
+    width: 100px;
 }
 
 .barra {
